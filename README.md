@@ -1,2 +1,2 @@
 # German-Practice
-Differents exercises in a German Company (Talanx)
+Differents exercises in a German Company
