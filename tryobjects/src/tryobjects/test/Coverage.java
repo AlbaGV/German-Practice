@@ -1,5 +1,7 @@
 package tryobjects.test;
 
+
+
 /**
  * 
  * This class Coverage with Premium and Name as Attributes
@@ -7,18 +9,16 @@ package tryobjects.test;
  * @author 033992
  *
  */
-// TODO Coverage doesn't inherite from Policy! You must do agregation of objects
+
 public class Coverage{
 
 	private double premium;
-	private String name;
 
-	// TODO Tidy up!
 
-	public Coverage(double premium, String name) {
-		super();
+
+
+	public Coverage(double premium) {
 		this.premium = premium;
-		this.name = name;
 	}
 
 	public double getPremium() {
@@ -29,21 +29,7 @@ public class Coverage{
 		this.premium = premium;
 	}
 
-	public String getName() {
-		return name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	
-
-	@Override
-	public String toString() {
-		System.out.println(" Premium: " + getPremium() + " Coverage name: "
-				+ getName());
-	}
 	
 	
 

@@ -1,5 +1,6 @@
 package tryobjects.test;
 
+
 /**
  * 
  * @author 033992
@@ -8,18 +9,20 @@ package tryobjects.test;
 // TODO Separate concerns!
 public class PolicyCreator {
 
-	public static void main(String[] Args) {
+	
+
+	public static void createPolicy (){
 		
-		Coverage coverage1 = new Coverage(1.567, "Obligatory");
+		AllRisks coverage1 = new AllRisks(1000.5);
 
 
-		Coverage coverage2 = new Coverage(1.0009, "Third-party");
 
-
-		Policy policy1 = new Policy("03/03/2005",coverage1, "01/07/2015");
+		ThirdParty coverage2 = new ThirdParty(10010.09);
 
 		
+		Policy policy1 = new Policy("10-10-2010","10-10-2010",coverage1,coverage2);
+		
+
 
 	}
-
 }
