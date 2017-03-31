@@ -1,5 +1,7 @@
 package tryobjects.test;
 
+import java.util.Date;
+
 
 
 /**
@@ -13,13 +15,55 @@ package tryobjects.test;
  */
 public class Policy {
 
-	private String dateOfBeginning; // TODO Why ist a date not a date? Choose
-									// the right type like Date.
-	private String dateOfEnd;
+	private Date dateOfBeginning;
+	private Date dateOfEnd;
+	
+
 	private Coverage coverage1;
 	private Coverage coverage2;
 
-	public Policy(String dateOfBeginning, String dateOfEnd, Coverage coverage1,
+
+	public Date getDateOfBeginning() {
+		return dateOfBeginning;
+	}
+
+
+	public void setDateOfBeginning(Date dateOfBeginning) {
+		this.dateOfBeginning = dateOfBeginning;
+	}
+
+
+	public Date getDateOfEnd() {
+		return dateOfEnd;
+	}
+
+
+	public void setDateOfEnd(Date dateOfEnd) {
+		this.dateOfEnd = dateOfEnd;
+	}
+
+
+	public Coverage getCoverage1() {
+		return coverage1;
+	}
+
+
+	public void setCoverage1(Coverage coverage1) {
+		this.coverage1 = coverage1;
+	}
+
+
+	public Coverage getCoverage2() {
+		return coverage2;
+	}
+
+
+	public void setCoverage2(Coverage coverage2) {
+		this.coverage2 = coverage2;
+	}
+
+	
+	public Policy(Date dateOfBeginning, Date dateOfEnd, Coverage coverage1,
 			Coverage coverage2) {
 		super();
 		this.dateOfBeginning = dateOfBeginning;
@@ -28,37 +72,6 @@ public class Policy {
 		this.coverage2 = coverage2;
 	}
 
-	public String getDateOfBeginning() {
-		return dateOfBeginning;
-	}
-
-	public void setDateOfBeginning(String dateOfBeginning) {
-		this.dateOfBeginning = dateOfBeginning;
-	}
-
-	public String getDateOfEnd() {
-		return dateOfEnd;
-	}
-
-	public void setDateOfEnd(String dateOfEnd) {
-		this.dateOfEnd = dateOfEnd;
-	}
-
-	public Coverage getCoverage1() {
-		return coverage1;
-	}
-
-	public void setCoverage1(Coverage coverage1) {
-		this.coverage1 = coverage1;
-	}
-
-	public Coverage getCoverage2() {
-		return coverage2;
-	}
-
-	public void setCoverage2(Coverage coverage2) {
-		this.coverage2 = coverage2;
-	}
 
 	@Override
 	public String toString() {
