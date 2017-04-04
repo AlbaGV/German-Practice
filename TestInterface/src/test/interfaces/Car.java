@@ -17,7 +17,7 @@ public class Car implements Risk {
 	}
 
 	@Override
-	public String getName() {
+	public String getId() {
 		return name;
 	}
 

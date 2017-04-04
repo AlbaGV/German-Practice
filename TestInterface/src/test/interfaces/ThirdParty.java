@@ -2,13 +2,19 @@ package test.interfaces;
 
 import java.util.List;
 
+
+@IdAnnotation(
+		id = 2
+		)
+
 public class ThirdParty extends Coverage {
+
 
 	private double maximumCoverage;
 
-	public ThirdParty(List<Risk> riskList, int id, double price, String name,
+	public ThirdParty(List<Risk> riskList, double price, String name,
 			double maximumCoverage) {
-		super(riskList, id, price, name);
+		super(riskList, price, name);
 		this.maximumCoverage = maximumCoverage;
 	}
 

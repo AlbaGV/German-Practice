@@ -15,7 +15,7 @@ public abstract class Coverage implements AssuranceComponent {
 	private double price;
 	private String name;
 
-	public Coverage(List<Risk> riskList, int id, double price, String name) {
+	public Coverage(List<Risk> riskList, double price, String name) {
 		super();
 		this.riskList = riskList;
 		this.price = price;
@@ -39,7 +39,7 @@ public abstract class Coverage implements AssuranceComponent {
 	}
 
 	@Override
-	public String getName() {
+	public String getId() {
 		return name;
 	}
 

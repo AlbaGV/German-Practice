@@ -13,19 +13,20 @@ import java.util.List;
  * @author 227320
  *
  */
+@IdAnnotation(
+		id = 1
+		)
 public class Policy implements AssuranceComponent {
 	
-	//private static final id = 1;
 
-	private String name;
 	private Calendar dateOfBeginning;
 	private Calendar dateOfEnd;
 
 	private List<Coverage> coverageList = new ArrayList<Coverage>();
 
-	public Policy(String id, Calendar dateOfBeginning, Calendar dateOfEnd, List<Coverage> coverageList) {
+	public Policy(Calendar dateOfBeginning, Calendar dateOfEnd, List<Coverage> coverageList) {
 		super();
-		this.name = id;
+		
 		this.dateOfBeginning = dateOfBeginning;
 		this.dateOfEnd = dateOfEnd;
 		this.coverageList = coverageList;
@@ -56,9 +57,11 @@ public class Policy implements AssuranceComponent {
 	}
 
 	@Override
-	public String getName() {
-		return name;
+	public String getId() {
+
+		return null;
 	}
+
 
 		
 }

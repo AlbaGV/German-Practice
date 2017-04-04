@@ -2,13 +2,19 @@ package test.interfaces;
 
 import java.util.List;
 
+
+@IdAnnotation(
+		id = 3
+		)
+
+
 public class AllRisks extends Coverage {
 
 	private double excess;
 
-	public AllRisks(List<Risk> riskList, int id, double price, String name,
+	public AllRisks(List<Risk> riskList, double price, String name,
 			double excess) {
-		super(riskList, id, price, name);
+		super(riskList, price, name);
 		this.excess = excess;
 	}
 
