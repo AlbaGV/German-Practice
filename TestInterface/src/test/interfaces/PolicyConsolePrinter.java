@@ -1,10 +1,9 @@
 package test.interfaces;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Arrays;
+
 /**
  * 
  * @author 227320
@@ -13,6 +12,7 @@ import java.util.Arrays;
 
 public class PolicyConsolePrinter {
 
+	// TODO Methods should not have more than 15 Lines of code!! Split them in some methods!
 	public static void main(String[] args) {
 
 		int i = 0;
@@ -22,8 +22,7 @@ public class PolicyConsolePrinter {
 
 		List<Policy> policyList = creator.getPolicyList();
 		List<AssuranceComponent> assuranceComponentList = creator.getAllAssuranceComponents();
-
-		System.out.println("PolicyConsolePrinter running!");
+		List<Integer> idList = new ArrayList<Integer>();
 
 		System.out.println("Number of Policies: " + policyList.size());
 
@@ -47,44 +46,35 @@ public class PolicyConsolePrinter {
 			if (idClass.isAnnotationPresent(IdAnnotation.class)) {
 				IdAnnotation allIdAnnotation = idClass.getAnnotation(IdAnnotation.class);
 				// System.out.println(allIdAnnotation.id());
-				Integer idList[] = { allIdAnnotation.id() };
+				// int idList[] = { allIdAnnotation.id() };
 
-				for (int z = 0; z < idList.length; z++) {
+				idList.add(allIdAnnotation.id());
 
-					for (int j = 0; j < idList.length - 1; j++) {
+				for (int z = 0; z < idList.size(); z++) {
+
+					for (int j = 0; j < idList.size() - 1; j++) {
 
 						if (z != j) {
 
-							if (idList[z] == idList[j]) {
+							if (idList.get(z) == idList.get(j)) {
 
-								idList[z] = 0;
-
-							}
-							
-							int n = idList.length;
-
-							for (int k = 0; k <= n - 1; k++) {
-
-								if (idList[k] != 0) {
-
-									System.out.println(idList[k]);
-
-								}
+								idList.remove(z);
 
 							}
-
 
 						}
-						
-						
 
 					}
-					
 
 				}
 
-				
 			}
+
+		}
+		for (Integer show : idList) {
+
+			System.out.println(show);
+
 		}
 
 	}
