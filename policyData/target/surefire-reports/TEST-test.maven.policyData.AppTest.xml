@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0" errors="0" skipped="0" tests="1" name="test.maven.policyData.AppTest">
+  <properties>
+    <property name="java.vendor" value="IBM Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\PROGS\IBM-JDK-1.7-x64\jre\bin\compressedrefs\jclSC170\vm.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\se-service.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\math.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\jlm.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmorb.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmorbapi.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmcfw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmpkcs.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmcertpathfw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmjgssfw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmjssefw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmsaslfw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmjcefw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmjgssprovider.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmjsseprovider2.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmcertpathprovider.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\xmldsigfw.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\xml.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\charsets.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\resources.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\rt.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\dataaccess.jar;C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ibmgpu.jar"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="pwa6470_27sr3ifx-20150512_01 (SR3+IX90162+IV73188 SR3+IX90162+IV73188)"/>
+    <property name="user.name" value="227320"/>
+    <property name="java.compiler" value="j9jit27"/>
+    <property name="os.encoding" value="UTF8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="user.language" value="de"/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="C:\PROGS\IBM-JDK-1.7-x64\jre\bin\compressedrefs;C:\PROGS\IBM-JDK-1.7-x64\jre\bin"/>
+    <property name="sun.boot.library.path" value="C:\PROGS\IBM-JDK-1.7-x64\jre\bin\compressedrefs;C:\PROGS\IBM-JDK-1.7-x64\jre\bin"/>
+    <property name="classworlds.conf" value="C:\Maven-3.2\bin\m2.conf"/>
+    <property name="java.version" value="1.7.0"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="com.ibm.system.agent.path" value="C:\PROGS\IBM-JDK-1.7-x64\jre\bin"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.zero.version" value="2"/>
+    <property name="java.endorsed.dirs" value="C:\PROGS\IBM-JDK-1.7-x64\jre\lib\endorsed"/>
+    <property name="com.ibm.oti.vm.library.version" value="27"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="com.ibm.packed.version" value="2"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="user.country" value="DE"/>
+    <property name="java.home" value="C:\PROGS\IBM-JDK-1.7-x64\jre"/>
+    <property name="java.vm.info" value="JRE 1.7.0 Windows 7 amd64-64 Compressed References 20150512_248336 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20150512_0946_B248336
+JIT  - tr.r13.java_20150406_89182
+GC   - R27_Java727_SR3_20150512_0946_B248336_CMPRSS
+J9CL - 20150512_248336"/>
+    <property name="os.version" value="6.1"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="2.7"/>
+    <property name="user.variant" value=""/>
+    <property name="console.encoding" value="Cp850"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="user.home" value="C:\Users\227320"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="java.library.path" value="C:\PROGS\IBM-JDK-1.7-x64\jre\bin\compressedrefs;C:\PROGS\IBM-JDK-1.7-x64\jre\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\SysWOW64\Empirum;C:\Program Files (x86)\Citrix\System32\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files (x86)\IBM Informix Connect\bin;C:\Program Files (x86)\IBM\gsk8\bin;C:\Program Files (x86)\IBM\gsk8\lib;C:\Oracle32\product\11.2.0\client_1\bin;C:\Program Files (x86)\jZip;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\Program Files\TortoiseSVN\bin;C:\PROGS\IBM-JDK-1.7-x64\bin;C:\Maven-3.2\bin;C:\Maven-3.2\bin;."/>
+    <property name="java.vendor.url" value="http://www.ibm.com/"/>
+    <property name="java.vm.vendor" value="IBM Corporation"/>
+    <property name="java.fullversion" value="JRE 1.7.0 IBM J9 2.7 Windows 7 amd64-64 Compressed References 20150512_248336 (JIT enabled, AOT enabled)
+J9VM - R27_Java727_SR3_20150512_0946_B248336
+JIT  - tr.r13.java_20150406_89182
+GC   - R27_Java727_SR3_20150512_0946_B248336_CMPRSS
+J9CL - 20150512_248336"/>
+    <property name="maven.home" value="C:\Maven-3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.class.path" value="C:\Maven-3.2\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="C:\Users\227320\AppData\Local\Temp\"/>
+    <property name="ibm.system.encoding" value="Cp1252"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="java.ext.dirs" value="C:\PROGS\IBM-JDK-1.7-x64\jre\lib\ext"/>
+    <property name="user.dir" value="C:\ws\eclipse44\policyData"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.name" value="IBM J9 VM"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="com.ibm.oti.jcl.build" value="20150512_248336"/>
+    <property name="java.specification.version" value="1.7"/>
+  </properties>
+  <testcase time="0" classname="test.maven.policyData.AppTest" name="testApp"/>
+</testsuite>

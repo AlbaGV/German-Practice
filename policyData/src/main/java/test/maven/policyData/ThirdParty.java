@@ -1,4 +1,4 @@
-package test.interfaces;
+package test.maven.policyData;
 
 import java.util.List;
 

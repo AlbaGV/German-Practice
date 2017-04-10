@@ -1,9 +1,12 @@
-package test.interfaces;
+package test.maven.policyCreateAndPrint;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
+import test.maven.policyData.AssuranceComponent;
+import test.maven.policyData.Coverage;
+import test.maven.policyData.IdAnnotation;
+import test.maven.policyData.Policy;
 
 /**
  * 
@@ -23,12 +26,10 @@ public class PolicyConsolePrinter {
 		List<Integer> idList = new ArrayList<Integer>();
 
 		System.out.println("Number of Policies: " + policyList.size());
-		
 
 		System.out.println(printAll(policyList));
 
 		System.out.println("List of IDs : ");
-		
 
 		for (Integer id : createIdList(idList, assuranceComponentList)) {
 
@@ -40,10 +41,9 @@ public class PolicyConsolePrinter {
 
 	private static String policyInformation(Policy policy) {
 
-		String policyInformation = "Policy/////Date of beginning: " + policy.getDateOfBeginning().get(Calendar.DATE) + "/"
-				+ policy.getDateOfBeginning().get(Calendar.MONTH) + "/" + policy.getDateOfBeginning().get(Calendar.YEAR) + ", Date of end: "
-				+ policy.getDateOfEnd().get(Calendar.DATE) + "/" + policy.getDateOfEnd().get(Calendar.MONTH) + "/" + policy.getDateOfEnd().get(Calendar.YEAR)
-				+ "\n";
+		String policyInformation = "Policy/////Date of beginning: " + policy.getDateOfBeginning().getDayOfMonth() + "/"
+				+ policy.getDateOfBeginning().getMonthOfYear() + "/" + policy.getDateOfBeginning().getYear() + ", Date of end: "
+				+ policy.getDateOfEnd().getDayOfMonth() + "/" + policy.getDateOfEnd().getMonthOfYear() + "/" + policy.getDateOfEnd().getYear() + "\n";
 		return policyInformation;
 	}
 
@@ -102,6 +102,5 @@ public class PolicyConsolePrinter {
 		}
 		return idList;
 	}
-	
 
 }

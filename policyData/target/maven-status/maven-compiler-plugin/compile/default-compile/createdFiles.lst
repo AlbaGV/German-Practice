@@ -1,0 +1,9 @@
+test\maven\policyData\IdAnnotation.class
+test\maven\policyData\Car.class
+test\maven\policyData\Coverage.class
+test\maven\policyData\AllRisks.class
+test\maven\policyData\Client.class
+test\maven\policyData\Risk.class
+test\maven\policyData\AssuranceComponent.class
+test\maven\policyData\ThirdParty.class
+test\maven\policyData\Policy.class
