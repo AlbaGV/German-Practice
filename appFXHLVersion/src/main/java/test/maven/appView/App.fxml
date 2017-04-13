@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <AnchorPane prefHeight="390.0" prefWidth="600.0">
+         <children>
+            <SplitPane dividerPositions="0.08361204013377926, 0.3528428093645485" layoutX="-3.0" prefHeight="390.0" prefWidth="600.0">
+               <items>
+                  <ListView orientation="HORIZONTAL" prefHeight="388.0" prefWidth="78.0" style="-fx-background-color: azure; -fx-border-color: #B0C4DE;" />
+                  <ListView orientation="HORIZONTAL" style="-fx-background-color: azure; -fx-border-color: #B0C4DE;" />
+                  <TableView style="-fx-background-color: #7FFFD4; -fx-border-color: #66CDAA;">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Date of Beginning" />
+                      <TableColumn prefWidth="75.0" text="Date Of End" />
+                        <TableColumn prefWidth="75.0" text="Coverages" />
+                    </columns>
+                  </TableView>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
